@@ -35,3 +35,4 @@ class MessagePostTest {
         //TODO  test when try to set a message that's too long
     }
 }
+

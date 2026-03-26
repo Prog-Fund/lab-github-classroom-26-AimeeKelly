@@ -32,7 +32,11 @@ class MessagePostTest {
         messagePost2.setMessage("Wait.. Wait..");
         assertEquals("Bye Bye", messagePost1.getMessage());
         assertEquals("Wait.. Wait..", messagePost2.getMessage());
-        //TODO  test when try to set a message that's too long
+
+        // test when try to set a message that's too long
+        messagePost2.setMessage("This is a very very very very very very very very very long message...");
+        assertEquals("Wait.. Wait..", messagePost2.getMessage());
+
     }
 }
 
